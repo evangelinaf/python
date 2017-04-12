@@ -2,8 +2,8 @@ n1 = int(input('Enter the first number: '))
 n2 = int(input('Enter the second number: '))
 
 calculate = input('''
-For adition, type +
-For substraction, type -
+For addition, type +
+For subtraction, type -
 For multiplication, type *
 For division, type /
 ''')
