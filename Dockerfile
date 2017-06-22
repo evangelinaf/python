@@ -1,4 +1,4 @@
-# Which image
+# Which image I am using
 FROM python 
 # Copy code to /src
 COPY . /src 
