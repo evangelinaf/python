@@ -1,3 +1,6 @@
-FROM python # Which image
-COPY . /src # code to /src
-CMD ["python", "/src/CracklePop.py"] # What to run
+# Which image
+FROM python 
+# Copy code to /src
+COPY . /src 
+# What to run
+CMD ["python", "/src/CracklePop.py"] 
