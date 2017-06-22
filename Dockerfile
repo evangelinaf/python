@@ -1,3 +1,3 @@
-FROM  python:3
-EXPOSE  80
-CMD ["python", "-m", "http.server"]
+FROM python
+COPY . /src
+CMD ["python", "/src/CracklePop.py"]
