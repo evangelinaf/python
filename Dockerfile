@@ -4,6 +4,7 @@ FROM python:3
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
+RUN easy_install -U setuptools
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy code to /src
