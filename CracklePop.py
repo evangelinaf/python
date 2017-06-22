@@ -1,4 +1,5 @@
 #!/usr/bin/python
+print('Content-type: text/html\r\n\r')
 
 for x in range(1, 101):
     if x % 15 == 0:
