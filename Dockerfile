@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # What to run
-CMD [ "python", "./CracklePop.py.py" ]
+CMD [ "python", "./CracklePop.py" ]
