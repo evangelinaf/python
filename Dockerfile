@@ -5,6 +5,7 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 RUN apt-get install -y python
+RUN pip3 install gitsome
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy code to /src
