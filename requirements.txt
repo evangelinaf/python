@@ -46,7 +46,6 @@ PyMySQL==0.7.2
 pyOpenSSL==0.15.1
 pyserial==3.0.1
 PySocks==1.5.0
-python-apt==1.1.0b1
 python-dateutil==2.5.3
 python-debian==0.1.27
 python-gnupg==0.3.8
