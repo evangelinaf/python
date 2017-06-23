@@ -62,7 +62,6 @@ six==1.10.0
 slacker==0.9.50
 tornado==4.2.1
 Twisted==16.0.0
-ubuntuone-client-data==14.4
 urllib3==1.13.1
 uTidylib==0.2
 vboxapi==1.0
