@@ -60,7 +60,6 @@ service-identity==16.0.0
 simplejson==3.8.1
 six==1.10.0
 slacker==0.9.50
-software-center-aptd-plugins==0.0.0
 tornado==4.2.1
 Twisted==16.0.0
 ubuntuone-client-data==14.4
