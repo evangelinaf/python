@@ -3,7 +3,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!\nWelcome to your first containerized web app!"    
+    return """
+    <p>Hello World!</p>
+    <p>Welcome to your first containerized web app!</p>
+    """
+
 
 if __name__ == "__main__":
     app.run()
