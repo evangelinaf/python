@@ -3,32 +3,23 @@
 # Based on Ubuntu
 ############################################################
 
-# Set the base image to Ubuntu
-FROM ubuntu
+# Set the base image to Python
+FROM python:3.5
 
 # File Author / Maintainer
 MAINTAINER Eva
 
-# Add the application resources URL
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ $(lsb_release -sc) main universe" >> /etc/apt/sources.list
-
-# Update the sources list
-RUN apt-get update
-
-# Install basic applications
-RUN apt-get install -y tar git curl nano wget dialog net-tools build-essential
-
-# Install Python and Basic Python Tools
-RUN apt-get install -y python python-dev python-distribute python-pip
-
 # Set the default directory where CMD will execute
 WORKDIR /usr/src/app
 
+# Copy requirements to /usr/src/app and install 
+COPY requirements.txt ./
+RUN apt-get install -y python
+RUN pip3 install gitsome
+RUN pip install --no-cache-dir -r requirements.txt
+
 # Copy the application folder inside the container
 ADD . .
-
-# Get pip to download and install requirements:
-RUN pip install -r /usr/src/app/requirements.txt
 
 # Expose ports
 EXPOSE 80
