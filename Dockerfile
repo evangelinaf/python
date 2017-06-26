@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 ADD . .
 
 # Expose ports
-EXPOSE 8080:8080
+EXPOSE 8080 8080
 
 # Set the default command to execute    
 # when creating a new container
